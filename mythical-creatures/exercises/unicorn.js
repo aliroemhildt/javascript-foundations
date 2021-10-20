@@ -17,18 +17,4 @@ class Unicorn {
   };
 };
 
-//tests
-var test1 = new Unicorn("Joe", "red");
-console.log(test1);
-console.log(test1.isWhite());
-
-var test2 = new Unicorn("Sue");
-console.log(test2);
-console.log(test2.isWhite());
-
 module.exports = Unicorn;
-
-// 1. read the test
-// 2. ask yourself if its going to fail and why
-// 3. run the test
-// 4. make it pass
