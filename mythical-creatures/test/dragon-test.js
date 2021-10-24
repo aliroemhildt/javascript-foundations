@@ -13,7 +13,7 @@ describe('Dragon', function() {
     assert.instanceOf(smaug, Dragon);
   });
 
-  it.skip('should have name', function() {
+  it('should have name', function() {
     var dragon1 = new Dragon('Jeff');
     var dragon2 = new Dragon('Louisa');
 
