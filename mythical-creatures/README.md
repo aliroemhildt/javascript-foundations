@@ -18,7 +18,7 @@ Run the command `npm test mythical-creatures/test/unicorn-test.js`. To run other
 
 - [X] `unicorn`
 - [X] `dragon`
-- [ ] `vampire`
+- [X] `vampire`
 - [X] `hobbit`
 - [X] `pirate`
 - [ ] `magician`
