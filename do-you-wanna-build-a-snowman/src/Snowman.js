@@ -1,9 +1,9 @@
 class Snowman {
-  constructor(snowman) {
-    this.carrots = snowman.carrots;
-    this.coal = snowman.coal;
-    this.buttons = snowman.buttons;
-    this.snowballs = snowman.snowballs;
+  constructor(details) {
+    this.carrots = details.carrots;
+    this.coal = details.coal;
+    this.buttons = details.buttons;
+    this.snowballs = details.snowballs;
     this.magicHat = false;
   };
 

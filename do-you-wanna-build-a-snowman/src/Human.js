@@ -1,4 +1,4 @@
-var Snowman = require('./Snowman');
+var Snowman = require("../src/Snowman");
 
 class Human {
   constructor(name) {
@@ -8,50 +8,43 @@ class Human {
       snowballs: 0,
       coal: 0,
       buttons: 0,
-      carrots: 0
+      carrots:0
     };
   };
 
-  gatherMaterials(type, amount) {
-    if (type === "carrots") {
-      this.materials.carrots += amount;
-    } else if (type === "buttons") {
-      this.materials.buttons += amount;
-    } else if (type === "coal") {
-      this.materials.coal += amount;
-    } else if (type === "snowballs") {
-      this.materials.snowballs += amount;
-    };
+  gatherMaterials(material, quantity) {
+    this.materials[material] += quantity;
+
+    // Can also do it this way:
+    // if (material === 'snowballs') {
+    //   this.materials.snowballs += quantity;
+    // } else if (material === 'coal') {
+    //   this.materials.coal += quantity;
+    // } else if (material === 'buttons') {
+    //   this.materials.buttons += quantity;
+    // } else if (material === 'carrots') {
+    //   this.materials.carrots += quantity;
+    // };
   };
 
   buildASnowman() {
-    return new Snowman({
-      carrots: this.materials.carrots,
+    var details = {
+      snowballs: this.materials.snowballs,
       coal: this.materials.coal,
       buttons: this.materials.buttons,
-      snowballs: this.materials.snowballs
-    });
-    //   var snowmanMaterials = {
-    //     coal: this.materials.coal,
-    //     carrots: this.materials.carrots,
-    //     snowballs: this.materials.snowballs,
-    //     buttons: this.materials.buttons
-    //   }
-    //   var snowman = new Snowman(snowmanMaterials);
-    // };
+      carrots: this.materials.carrots
+    }
+    var snowman = new Snowman(details);
+    return snowman;
   };
 
   placeMagicHat() {
     if (this.materials.coal >= 2 && this.materials.buttons >= 5 && this.materials.carrots >= 1 && this.materials.snowballs >= 2) {
-      return "Woah, this snowman is coming to life!";
+      return 'Woah, this snowman is coming to life!';
     } else {
-      return "I guess I didn't build it correctly.";
+      return 'I guess I didn\'t build it correctly.';
     };
   };
 };
-
-
-
-
 
 module.exports = Human;
