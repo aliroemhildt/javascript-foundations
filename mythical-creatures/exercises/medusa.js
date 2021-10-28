@@ -8,7 +8,9 @@ class Medusa {
   };
 
   gazeAtVictim(person) {
-    this.statues.push(new Statue(person.name));
+    if (this.statues.length < 3) {
+      this.statues.push(new Statue(person.name));
+    };
   };
 };
 

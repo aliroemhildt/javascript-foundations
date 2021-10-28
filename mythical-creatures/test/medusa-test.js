@@ -71,7 +71,7 @@ describe('Medusa', function() {
     assert.instanceOf(medusa.statues[2], Statue);
   });
 
-  it.skip('should let the first victim go free when stoning the 4th', function() {
+  it('should let the first victim go free when stoning the 4th', function() {
     var medusa = new Medusa('Hannah');
     var victim1 = new Person('Pam');
     var victim2 = new Person('Khalid');
