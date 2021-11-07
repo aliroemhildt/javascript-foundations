@@ -25,7 +25,7 @@ describe('Golf Course', function () {
 
   // PASS GOLFER TESTS BELOW BEFORE FINISHING REMAINING GOLF COURSE TESTS
 
-  it('should accept golfers if there is room available', function () {
+  it.skip('should accept golfers if there is room available', function () {
     var golfCourse = new GolfCourse('Bear Dance', 'hard', 8, ['bear shaped green, views']);
     var golfer1 = new Golfer({ name: 'Pat', handicap: 11 });
     var golfer2 = new Golfer({ name: 'Ted', handicap: 13 });
@@ -47,7 +47,7 @@ describe('Golf Course', function () {
     assert.deepEqual(golfCourse.currentlyPlaying, ['Bridget', 'Joanna', 'Kevin', 'Ted', 'Pat']);
   });
 
-  it('should not accept golfers if there is no room available', function () {
+  it.skip('should not accept golfers if there is no room available', function () {
     var golfCourse = new GolfCourse('Bear Dance', 'hard', 4, ['bear shaped green, views']);
     var golfer1 = new Golfer({ name: 'Pat', handicap: 11 });
     var golfer2 = new Golfer({ name: 'Ted', handicap: 13 });
@@ -137,7 +137,7 @@ describe('Golfer', function () {
     assert.equal(golfer5.marvel(golfCourse2), 'I love the undulating greens and creative layout on this course!')
   });
 
-  it('should have their performance on a hole affect their frustration', function () {
+  it.skip('should have their performance on a hole affect their frustration', function () {
 
     // **NOTE: Scores below 0 are considered excellent, scores of even par (0) are good, scores above 0 are considered bad**
 
