@@ -25,14 +25,30 @@ class Golfer {
   };
 
   marvel(golfCourse) {
-    var phrase = `I love the `;
-    for (var i = 0; i < golfCourse.features.length; i++) {
-      phrase += `${golfCourse.features[i]} and`;
-      if (golfCourse.features[i] === (golfCourse.features.length - 1)) {
-        phrase += `${golfCourse.features[i]} on this course!`
-      };
-    };
+    return `I love the ${golfCourse.features[0]} and ${golfCourse.features[1]} on this course!`;
+    // var phrase = `I love the `;
+    // for (var i = 0; i < golfCourse.features.length; i++) {
+    //   if (i < (golfCourse.features.length - 1)) {
+    //     phrase += `${golfCourse.features[i]} and `;
+    //   } else {
+    //     phrase += `${golfCourse.features[i]} on this course!`;
+    //   };
+    // };
+    // return phrase;
   };
+
+  whatYaShoot(score) {
+    if (score > 0) {
+      this.frustration += 20;
+      return 'Doh!';
+    } else if (score === 0) {
+      this.frustration -= 10;
+      return 'Booyah!';
+    } else if (score < 0) {
+      this.frustration = 0;
+      return 'I AM THE GREATEST GOLFER ALIVE!';
+    };
+  }
 };
 
 module.exports = Golfer;
