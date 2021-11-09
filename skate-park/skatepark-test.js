@@ -364,7 +364,7 @@ describe('Skater', function() {
     assert.equal(skater.tricks.bigSpin, true)
   })
 
-  it.skip('should be able to learn many tricks  after practicing and getting frustrated 3 times', function() {
+  it('should be able to learn many tricks  after practicing and getting frustrated 3 times', function() {
     var tricks = {
       kickflip: true,
       treflip: false,
@@ -391,7 +391,7 @@ describe('Skater', function() {
     assert.equal(skater.tricks.treflip, true)
   })
 
-  it.skip('should lose all frustration after learning a new trick', function() {
+  it('should lose all frustration after learning a new trick', function() {
     var tricks = {
       kickflip: false,
       treflip: false,

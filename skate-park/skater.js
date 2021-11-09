@@ -8,16 +8,13 @@ class Skater {
   };
 
   practice(trick) {
-    // access the trick in this.tricks []
-    // if true: nothing
-    // if false: frustration to increase by 1
-
-    // create counter to track how many times trick has been practiced
-    // check how many times trick has been practiced
-    // if less than three: increase frustration by 1
-    // if equal to three: change value to true
-    if (!this.tricks[trick]) {
+    if (!this.tricks[trick]){
       this.frustration++;
+    };
+    if (this.frustration === 3) {
+      this.tricks[trick] = true;
+      this.frustration = 0;
+      return `I just learned to ${trick}!!!`;
     };
   };
 };
