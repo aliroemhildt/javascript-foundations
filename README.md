@@ -49,7 +49,7 @@ Completing all of these test suites is not necessary, but you should be working 
 - [ ] ⛷ [Ski Lift](./ski-lift)
 - [X] ⛄️ [Snowman](./do-you-wanna-build-a-snowman)
 - [ ] 🚀 [Spaceport](./spaceport)
-- [ ] 🍔 [Lunch Box](./lunchbox)
+- [X] 🍔 [Lunch Box](./lunchbox)
 - [ ] 🏞 [Oregon Trail](./oregon-trail)
 - [ ] 🔮 [Wizarding Arrays](./wizarding-arrays)
 - [ ] ⚡️ [Wizarding Objects](./wizarding-objects)
