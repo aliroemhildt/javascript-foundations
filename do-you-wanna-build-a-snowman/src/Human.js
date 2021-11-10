@@ -10,6 +10,7 @@ class Human {
       buttons: 0,
       carrots: 0
     };
+    this.snowman;
   };
 
   gatherMaterials(material, amount) {
@@ -17,13 +18,12 @@ class Human {
   };
 
   buildASnowman() {
-    return new Snowman(this.materials);
+    this.snowman = new Snowman(this.materials);
+    return this.snowman;
   };
 
   placeMagicHat() {
-    var snowman = this.buildASnowman()
-    snowman.canWearMagicHat();
-    if (snowman.magicHat) {
+    if (this.snowman.magicHat) {
       return 'Woah, this snowman is coming to life!';
     } else {
       return 'I guess I didn\'t build it correctly.';

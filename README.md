@@ -46,7 +46,7 @@ Completing all of these test suites is not necessary, but you should be working 
 - [ ] 🍫 [Vending Machine](./vending-machine)
 
 ### Other Greats
-- [ ] ⛷ [Ski Lift](./ski-lift)
+- [X] ⛷ [Ski Lift](./ski-lift)
 - [X] ⛄️ [Snowman](./do-you-wanna-build-a-snowman)
 - [ ] 🚀 [Spaceport](./spaceport)
 - [X] 🍔 [Lunch Box](./lunchbox)
